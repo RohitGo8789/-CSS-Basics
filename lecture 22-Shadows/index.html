@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        :root{
+            --primary-color: pink;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: aqua;
+            /* width: 800px; */
+            height: 400px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+
+            background-color: var(--primary-color);
+            height: 330px;
+            width: var(--custom-width);
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+
+            /* box-shadow using x and y offset */
+            /* box-shadow: 10px 10px black;  */
+
+            /* box-shadow using blur radius */
+            /* box-shadow: 10px 10px 15px black; */
+
+            /* box-shadow with spread radius */
+            /* box-shadow: 10px 10px 10px 15px black; */
+
+            /* box-shadow: inset 10px 10px 15px black; */
+
+            /* box-shadow: 10px 10px green, 20px 20px red; */
+            
+        }
+        #head1{
+            text-shadow: 2px 3px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="sunset.jpg" alt="sunset">
+            <h2 id="head1">SUNSET !!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, molestiae quasi consequatur exercitationem veniam quis corrupti similique, tenetur eius assumenda voluptate eos obcaecati amet facilis.
+
+            </p>
+        </div>
+
+
+    </div>
+</body>
+</html>
